@@ -457,10 +457,10 @@ function ApiKeySection({ onToast }: { onToast: (t: Toast) => void }) {
           <ModelSelector
             models={ANTHROPIC_MODELS}
             settingKey="anthropicModel"
-            defaultValue="claude-haiku-4-5-20251001"
+            defaultValue="claude-opus-4-6"
             onToast={onToast}
           />
-          <p className="text-xs text-zinc-600 mt-1.5">Applied to all AI operations — API key and Claude CLI</p>
+          <p className="text-xs text-zinc-500 mt-1.5">Applies to all AI operations — API key <strong className="text-zinc-400 font-medium">and Claude CLI</strong></p>
         </div>
         <div className="border-t border-zinc-800" />
         <div>

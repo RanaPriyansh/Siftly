@@ -33,7 +33,7 @@ export async function GET(): Promise<NextResponse> {
       openaiApiKey: maskKey(openai?.value ?? null),
       hasAnthropicKey: anthropic !== null,
       hasOpenaiKey: openai !== null,
-      anthropicModel: anthropicModel?.value ?? 'claude-haiku-4-5-20251001',
+      anthropicModel: anthropicModel?.value ?? 'claude-opus-4-6',
       openaiModel: openaiModel?.value ?? 'gpt-4o-mini',
     })
   } catch (err) {
